@@ -1,0 +1,1 @@
+{:main "my-project.client", :output-dir "resources/public/cljs/out", :output-to "resources/public/cljs/app.js", :asset-path "/cljs/out", :source-map true, :optimizations :none, :pretty-print true, :source-map-timestamp true}

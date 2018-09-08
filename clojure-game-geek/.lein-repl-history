@@ -1,0 +1,38 @@
+(q "{ game_by_id(id: \"foo\") { id name summary }}")
+(q "{ game_by_id(id: \"anything\") { id name summary }}")
+(q "{ game_by_id(id: \"1236\") { id name summary }}")
+exit
+(q "{ game_by_id(id: \"1236\") { id name summary }}")
+(reduce + 1 [1 2 3 4 5])
+(q "{ game_by_id(id: \"1237\") { name designers { name }}}")
+exit
+(q "{ game_by_id(id: \"1237\") { name designers { name }}}")
+(q "{ game_by_id(id: \"1237\") { name designers }}")
+(q "{ game_by_id(id: \"1234\") { name designers { name games { name }}}}")
+(start)
+exit
+(start)
+exit
+(start)
+exit
+(q "{ game_by_id(id: \"1237\") { name rating_summary { count average }}}")
+(start)
+(q "{ game_by_id(id: \"1237\") { name rating_summary { count average }}}")
+(q "{ member_by_id(id: \"1410\") { member_name ratings { game { name } rating }}}")
+(q "{ member_by_id(id: \"1410\") { member_name ratings { game { name rating_summary { count average } designers { name  games { name }}} rating }}}")
+exit
+(q "{ member_by_id(id: \"1410\") { member_name ratings { game { name rating_summary { count average } designers { name  games { name }}} rating }}}")
+(start)
+(q "{ member_by_id(id: \"1410\") { member_name ratings { game { name rating_summary { count average } designers { name  games { name }}} rating }}}")
+exit
+(q "{ member_by_id(id: \"1410\") { member_name ratings { game { id name } rating }}}")
+(start)
+(q "{ member_by_id(id: \"1410\") { member_name ratings { game { id name } rating }}}")
+(q "mutation { rate_game(member_id: \"1410\", game_id: \"1236\", rating: 3) { rating_summary { count average }}}")
+(q "{ member_by_id(id: \"1410\") { member_name ratings { game { id name } rating }}}")
+(q "mutation { rate_game(member_id: \"1410\", game_id: \"1235\", rating: 4) { name rating_summary { count average }}}")
+(q "mutation { rate_game(member_id: \"1410\", game_id: \"9999\", rating: 4) { name rating_summary { count average }}}")
+(q "mutation { rate_game(member_id: \"1410\", game_id: \"9999\") { name rating_summary { count average }}}")
+(q "mutation { rate_game(member_id: \"1410\", game_id: \"9999\", rating: \"Great!\") { name rating_summary { count average }}}")
+(start)
+(q "{ game_by_id(id: 1234) { game_id name summary min_players max_players }}")
