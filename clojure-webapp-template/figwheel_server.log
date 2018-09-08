@@ -1,0 +1,5 @@
+[0mCompiling "resources/public/cljs/app.js" from ["src/cljs"]...[0m
+[32mSuccessfully compiled "resources/public/cljs/app.js" in 0.329 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/goog/deps.js
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  resources/public/cljs/out/my_project/client.js

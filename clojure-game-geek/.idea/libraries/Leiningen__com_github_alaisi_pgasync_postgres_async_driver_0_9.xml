@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: com.github.alaisi.pgasync/postgres-async-driver:0.9">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/alaisi/pgasync/postgres-async-driver/0.9/postgres-async-driver-0.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
